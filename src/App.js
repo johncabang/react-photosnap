@@ -4,18 +4,24 @@ import Stories from "./pages/Stories";
 import Features from "./pages/Features";
 import Pricing from "./pages/Pricing";
 import PageNotFound from "./pages/PageNotFound";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <Switch>
-      <Route path="/" exact component={Home} />
-      <Route path="/stories" exact component={Stories} />
-      <Route path="/features" exact component={Features} />
-      <Route path="/pricing" exact component={Pricing} />
-      <Route path="*">
-        <PageNotFound />
-      </Route>
-    </Switch>
+    <>
+      <Navbar />
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/stories" component={Stories} />
+        <Route path="/features" component={Features} />
+        <Route path="/pricing" component={Pricing} />
+        <Route path="*">
+          <PageNotFound />
+        </Route>
+      </Switch>
+      <Footer />
+    </>
   );
 }
 
