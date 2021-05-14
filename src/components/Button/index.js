@@ -11,7 +11,8 @@ const Button = (props) => {
         backgroundColor: "#000",
         border: "none",
         cursor: "pointer",
-        width: "158px",
+        width: "160px",
+        height: "40px",
       }}
     >
       {props.children}

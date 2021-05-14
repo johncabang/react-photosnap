@@ -1,20 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 import Button from "../Button";
+import {
+  StyledContainer,
+  StyledLI,
+  StyledLink,
+  StyledLogoLink,
+  StyledUL,
+} from "./NavbarElements";
 
 const Navbar = () => {
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "space-evenly",
-        padding: 20,
-        alignItems: "center",
-        height: 72,
-        // backgroundColor: "lightgray",
-      }}
-    >
-      <Link to="/" style={{ alignItems: "center" }}>
+    <StyledContainer>
+      <StyledLogoLink>
         <svg xmlns="http://www.w3.org/2000/svg" width="170" height="16">
           <defs>
             <linearGradient id="a" x1="0%" x2="50%" y1="85.457%" y2="14.543%">
@@ -32,62 +30,26 @@ const Navbar = () => {
             <path fill="url(#a)" d="M0 16L9.5 0 19 16z" />
           </g>
         </svg>
-      </Link>
-      <ul style={{ display: "flex" }}>
-        <li
-          style={{
-            listStyle: "none",
-            paddingRight: 20,
-          }}
-        >
-          <Link
-            to="/stories"
-            style={{
-              textDecoration: "none",
-              textTransform: "uppercase",
-              color: "inherit",
-            }}
-          >
+      </StyledLogoLink>
+      <StyledUL>
+        <StyledLI>
+          <StyledLink to="stories">
             <h4>stories</h4>
-          </Link>
-        </li>
-        <li
-          style={{
-            listStyle: "none",
-            paddingRight: 20,
-          }}
-        >
-          <Link
-            to="/features"
-            style={{
-              textDecoration: "none",
-              textTransform: "uppercase",
-              color: "inherit",
-            }}
-          >
+          </StyledLink>
+        </StyledLI>
+        <StyledLI>
+          <StyledLink to="/features">
             <h4>features</h4>
-          </Link>
-        </li>
-        <li
-          style={{
-            listStyle: "none",
-            paddingRight: 20,
-          }}
-        >
-          <Link
-            to="/pricing"
-            style={{
-              textDecoration: "none",
-              textTransform: "uppercase",
-              color: "inherit",
-            }}
-          >
+          </StyledLink>
+        </StyledLI>
+        <StyledLI>
+          <StyledLink to="/pricing">
             <h4> pricing</h4>
-          </Link>
-        </li>
-      </ul>
+          </StyledLink>
+        </StyledLI>
+      </StyledUL>
       <Button>get an invite</Button>
-    </div>
+    </StyledContainer>
   );
 };
 
