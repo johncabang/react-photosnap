@@ -16,6 +16,7 @@ export const StyledContainer = styled.div`
     padding-left: 50px;
     padding-right: 50px;
     height: 284px;
+    transition: ease-in 0.5s;
   }
 
   @media screen and (max-width: 520px) {
@@ -37,7 +38,6 @@ export const StyledLinksWrapper = styled.div`
 
   @media screen and (max-width: 520px) {
     justify-content: center;
-    width: 55%;
   }
 `;
 
@@ -90,8 +90,8 @@ export const StyledLI = styled.li`
   list-style: none;
   text-transform: uppercase;
   padding-right: 30px;
-
   width: 100%;
+
   @media screen and (max-width: 520px) {
     display: flex;
     justify-content: center;
@@ -105,28 +105,27 @@ export const StyledLinks = styled(Link)`
   text-decoration: none;
   text-transform: uppercase;
 
+  &:hover {
+    color: #515151;
+    transition: ease-in 0.2s;
+  }
+
   @media screen and (max-width: 520px) {
     padding-bottom: 20px;
+    z-index: 1;
   }
-`;
-
-export const StyledFooterLinks = styled.div`
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
 `;
 
 export const StyledSocialLinks = styled.div`
   display: flex;
   justify-content: space-between;
   position: absolute;
-  width: 40%;
+  width: 175px;
   bottom: 0;
 
   @media screen and (max-width: 520px) {
     width: 100%;
     top: 60px;
-    height: 100%;
   }
 `;
 
@@ -153,6 +152,11 @@ export const StyledRightWrapper = styled.div`
 export const StyledH4 = styled.h4`
   text-transform: uppercase;
   padding-right: 20px;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
 
   @media screen and (max-width: 520px) {
     padding: 0 0 30px 0;

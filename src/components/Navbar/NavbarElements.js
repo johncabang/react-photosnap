@@ -13,6 +13,7 @@ export const StyledContainer = styled.div`
   @media screen and (max-width: 1024px) {
     padding-left: 50px;
     padding-right: 50px;
+    transition: ease-in 0.5s;
   }
 
   @media screen and (max-width: 520px) {
@@ -38,6 +39,11 @@ export const StyledLink = styled(Link)`
   color: inherit;
   text-decoration: none;
   text-transform: uppercase;
+
+  &:hover {
+    color: #b9b9b9;
+    transition: ease-in 0.2s;
+  }
 `;
 
 export const StyledLogoLink = styled(Link)`
