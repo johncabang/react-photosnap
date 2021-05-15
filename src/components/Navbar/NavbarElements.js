@@ -9,10 +9,24 @@ export const StyledContainer = styled.div`
   padding: 20px 160px;
   margin: 0 auto;
   max-width: 1440px;
+
+  @media screen and (max-width: 1024px) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media screen and (max-width: 500px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 `;
 
 export const StyledUL = styled.ul`
   display: flex;
+
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
 `;
 
 export const StyledLI = styled.li`

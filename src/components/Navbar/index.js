@@ -12,7 +12,7 @@ import {
 const Navbar = () => {
   return (
     <StyledContainer>
-      <StyledLogoLink>
+      <StyledLogoLink to="/">
         <svg xmlns="http://www.w3.org/2000/svg" width="170" height="16">
           <defs>
             <linearGradient id="a" x1="0%" x2="50%" y1="85.457%" y2="14.543%">
@@ -38,12 +38,12 @@ const Navbar = () => {
           </StyledLink>
         </StyledLI>
         <StyledLI>
-          <StyledLink to="/features">
+          <StyledLink to="features">
             <h4>features</h4>
           </StyledLink>
         </StyledLI>
         <StyledLI>
-          <StyledLink to="/pricing">
+          <StyledLink to="pricing">
             <h4> pricing</h4>
           </StyledLink>
         </StyledLI>
