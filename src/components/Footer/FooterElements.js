@@ -18,7 +18,7 @@ export const StyledContainer = styled.div`
     height: 284px;
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 520px) {
     justify-content: center;
     flex-direction: column;
     padding: 50px 0;
@@ -35,7 +35,7 @@ export const StyledLinksWrapper = styled.div`
   height: 100%;
   position: relative;
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 520px) {
     justify-content: center;
     width: 55%;
   }
@@ -60,7 +60,7 @@ export const StyledLogo = styled(Link)`
     padding-bottom: 20px;
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 520px) {
     width: 100%;
     padding: 0;
     display: flex;
@@ -78,7 +78,7 @@ export const StyledUL = styled.ul`
     flex-direction: row;
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 520px) {
     flex-direction: column;
     justify-content: flex-end;
     width: 100%;
@@ -92,7 +92,7 @@ export const StyledLI = styled.li`
   padding-right: 30px;
 
   width: 100%;
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 520px) {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -105,7 +105,7 @@ export const StyledLinks = styled(Link)`
   text-decoration: none;
   text-transform: uppercase;
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 520px) {
     padding-bottom: 20px;
   }
 `;
@@ -118,11 +118,12 @@ export const StyledFooterLinks = styled.div`
 
 export const StyledSocialLinks = styled.div`
   display: flex;
+  justify-content: space-between;
   position: absolute;
+  width: 40%;
   bottom: 0;
 
-  @media screen and (max-width: 500px) {
-    justify-content: space-between;
+  @media screen and (max-width: 520px) {
     width: 100%;
     top: 60px;
     height: 100%;
@@ -132,12 +133,11 @@ export const StyledSocialLinks = styled.div`
 export const StyledRightSection = styled.div`
   display: flex;
   justify-content: space-between;
-  flex-direction: column-reverse;
+  flex-direction: column;
   height: 100%;
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 520px) {
     justify-content: flex-end;
-    flex-direction: column;
   }
 `;
 
@@ -145,7 +145,7 @@ export const StyledRightWrapper = styled.div`
   display: flex;
   justify-content: flex-end;
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 520px) {
     justify-content: center;
   }
 `;
@@ -154,7 +154,7 @@ export const StyledH4 = styled.h4`
   text-transform: uppercase;
   padding-right: 20px;
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 520px) {
     padding: 0 0 30px 0;
   }
 `;

@@ -15,7 +15,7 @@ export const StyledContainer = styled.div`
     padding-right: 50px;
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 520px) {
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -24,7 +24,7 @@ export const StyledContainer = styled.div`
 export const StyledUL = styled.ul`
   display: flex;
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 520px) {
     display: none;
   }
 `;
