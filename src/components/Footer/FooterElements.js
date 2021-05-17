@@ -38,6 +38,7 @@ export const StyledLinksWrapper = styled.div`
 
   @media screen and (max-width: 520px) {
     justify-content: center;
+    width: 60%;
   }
 `;
 

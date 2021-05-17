@@ -1,5 +1,7 @@
 import styled from "styled-components";
-import bgBeta from "../../assets/shared/desktop/bg-beta.jpg";
+
+import heroDesktop from "../../assets/features/desktop/hero.jpg";
+import heroTablet from "../../assets/features/tablet/hero.jpg";
 
 export const StyledContainer = styled.div`
   display: flex;
@@ -21,6 +23,7 @@ export const StyledHeroTextWrapper = styled.div`
   flex-direction: column;
   padding-left: 115px;
   width: 610px;
+  /* width: 60%; */
   background-color: #000;
 `;
 
@@ -34,37 +37,17 @@ export const StyledP = styled.p`
   padding-top: 25px;
 `;
 
-export const StyledHeroImg = styled.img`
-  /* width: 100%; */
-`;
+export const StyledHeroImg = styled.div`
+  background-image: url(${heroDesktop});
+  background-size: cover;
+  width: 100%;
 
-export const StyledFeaturesFooter = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 55px 160px;
-  background-image: url(${bgBeta});
-`;
+  @media screen and (max-width: 1024px) {
+  }
 
-export const StyledH1Footer = styled.h1`
-  text-transform: uppercase;
-  color: #fff;
-  width: 400px;
-`;
-
-export const StyledRightWrapper = styled.div`
-  display: flex;
-  justify-content: flex-end;
-`;
-
-export const StyledH4 = styled.h4`
-  text-transform: uppercase;
-  padding-right: 20px;
-
-  cursor: pointer;
-  color: white;
-
-  &:hover {
-    text-decoration: underline;
+  @media screen and (max-width: 520px) {
+    background-image: url(${heroTablet});
+    background-size: cover;
+    width: 100%;
   }
 `;

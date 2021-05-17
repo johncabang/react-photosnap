@@ -1,10 +1,12 @@
 import React from "react";
+import InviteSection from "../../components/InviteSection";
+import { StyledContainer } from "./PricingElements";
 
 const Pricing = () => {
   return (
-    <div>
-      <h1>Pricing</h1>
-    </div>
+    <StyledContainer>
+      <InviteSection />
+    </StyledContainer>
   );
 };
 
