@@ -38,7 +38,7 @@ export const StyledHeroTextWrapper = styled.div`
   width: 610px;
   background-color: #000;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     padding: 70px;
     width: 495px;
   }
