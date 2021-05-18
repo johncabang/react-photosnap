@@ -1,4 +1,5 @@
-import { Route, Switch } from "react-router-dom";
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+
 import Home from "./pages/Home";
 import Stories from "./pages/Stories";
 import Features from "./pages/Features";
@@ -6,10 +7,12 @@ import Pricing from "./pages/Pricing";
 import PageNotFound from "./pages/PageNotFound";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
-    <>
+    <Router>
+      <ScrollToTop />
       <Navbar />
       <Switch>
         <Route path="/" exact component={Home} />
@@ -21,7 +24,7 @@ function App() {
         </Route>
       </Switch>
       <Footer />
-    </>
+    </Router>
   );
 }
 
