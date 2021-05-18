@@ -15,7 +15,6 @@ export const StyledHero = styled.div`
 
   @media screen and (max-width: 520px) {
     flex-direction: ${(props) => props.direction};
-    /* flex-direction: column-reverse; */
     height: 100%;
     transition: ease-in 0.5s;
   }
@@ -65,13 +64,12 @@ export const StyledP = styled.p`
 
 export const StyledHeroImg = styled.div`
   background-image: ${(props) => `url(${props.desktopBackground})`};
-
   background-size: cover;
   width: 830px;
 
   @media screen and (max-width: 768px) {
     background-image: ${(props) => `url(${props.tabletBackground})`};
-    /* background-size: cover; */
+    background-size: cover;
     width: 273px;
   }
 
@@ -100,6 +98,6 @@ export const StyledH4 = styled.h4`
   }
 
   @media screen and (max-width: 520px) {
-    padding: 0 0 30px 0;
+    padding: 0 20px 30px 0;
   }
 `;

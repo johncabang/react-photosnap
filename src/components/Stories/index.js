@@ -1,13 +1,15 @@
 import React from "react";
-import Card from "../../components/Card";
+import Card from "../Card";
 
-import { storyData } from "./../../data";
 import { StyledContainer } from "./StoriesElements";
+import { storyData } from "./../../data";
 
 const Stories = () => {
+  const firstFourStories = storyData.slice(0, 4);
+
   return (
     <StyledContainer>
-      <Card stories={storyData} />
+      <Card stories={firstFourStories} />
     </StyledContainer>
   );
 };

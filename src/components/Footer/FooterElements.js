@@ -160,7 +160,7 @@ export const StyledH4 = styled.h4`
   }
 
   @media screen and (max-width: 520px) {
-    padding: 0 0 30px 0;
+    padding: 0 20px 30px 0;
   }
 `;
 
