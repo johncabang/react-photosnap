@@ -1,9 +1,14 @@
 import styled from "styled-components";
 
+export const StyledContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+`;
+
 export const StyledCard = styled.div`
   display: flex;
   justify-content: center;
-  flex-direction: column;
   text-align: center;
   width: 340px;
   height: 236px;
@@ -12,6 +17,8 @@ export const StyledCard = styled.div`
   @media screen and (max-width: 1024px) {
     width: 100%;
     padding: 0 250px;
+    margin: 100px 0;
+    transition: ease-in 0.5s;
   }
 
   @media screen and (max-width: 768px) {
@@ -28,13 +35,11 @@ export const StyledCardWrapper = styled.div`
 export const StyledImageContainer = styled.div`
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   padding-bottom: 50px;
   height: 150px;
 `;
 
 export const StyledImage = styled.img`
-  /* width: 72px; */
   object-fit: none;
 `;
 
@@ -43,5 +48,5 @@ export const StyledH3 = styled.h3`
 `;
 
 export const StyledP = styled.p`
-  color: #gray;
+  color: gray;
 `;

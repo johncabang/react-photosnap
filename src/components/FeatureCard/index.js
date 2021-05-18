@@ -1,6 +1,7 @@
 import React from "react";
 
 import {
+  StyledContainer,
   StyledCard,
   StyledImage,
   StyledImageContainer,
@@ -11,7 +12,7 @@ import {
 
 const FeatureCard = ({ features }) => {
   return (
-    <>
+    <StyledContainer>
       {features.map((feature) => {
         return (
           <StyledCard key={feature.id}>
@@ -25,7 +26,7 @@ const FeatureCard = ({ features }) => {
           </StyledCard>
         );
       })}
-    </>
+    </StyledContainer>
   );
 };
 
