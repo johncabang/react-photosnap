@@ -1,10 +1,10 @@
 import React from "react";
 import Card from "../Card";
 
-import { StyledContainer } from "./StoriesElements";
-import { storyData } from "./../../data";
+import { StyledContainer } from "./StoriesSectionElements";
+import { storyData } from "../../data";
 
-const Stories = () => {
+const StoriesSection = () => {
   const firstFourStories = storyData.slice(0, 4);
 
   return (
@@ -14,4 +14,4 @@ const Stories = () => {
   );
 };
 
-export default Stories;
+export default StoriesSection;

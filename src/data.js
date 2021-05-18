@@ -1,8 +1,8 @@
-// import desktopCardMountains from "./assets/stories/desktop/mountains.jpg"
 import desktopCardMountains from "./assets/stories/desktop/mountains.jpg";
 import desktopCardCityscapes from "./assets/stories/desktop/cityscapes.jpg";
 import desktopCard18DaysVoyage from "./assets/stories/desktop/18-days-voyage.jpg";
 import desktopCardArchitecturals from "./assets/stories/desktop/architecturals.jpg";
+
 import desktopCardWorldTour from "./assets/stories/desktop/world-tour.jpg";
 import desktopCardUnforseenCorners from "./assets/stories/desktop/unforeseen-corners.jpg";
 import desktopCardTripToNowhere from "./assets/stories/desktop/trip-to-nowhere.jpg";
@@ -17,6 +17,13 @@ import desktopCardKingOnAfrica from "./assets/stories/desktop/king-on-africa.jpg
 import desktopCardDarkForest from "./assets/stories/desktop/dark-forest.jpg";
 import desktopCardCalmWaters from "./assets/stories/desktop/calm-waters.jpg";
 import desktopCardBehindTheWaves from "./assets/stories/desktop/behind-the-waves.jpg";
+
+import boostExposure from "./assets/features/desktop/boost-exposure.svg";
+import customDomain from "./assets/features/desktop/custom-domain.svg";
+import dragDrop from "./assets/features/desktop/drag-drop.svg";
+import embed from "./assets/features/desktop/embed.svg";
+import noLimit from "./assets/features/desktop/no-limit.svg";
+import responsive from "./assets/features/desktop/responsive.svg";
 
 export const storyData = [
   {
@@ -130,5 +137,44 @@ export const storyData = [
     image: desktopCardLandOfDreams,
     title: "Land of Dreams",
     author: "William Malcolm",
+  },
+];
+
+export const featuresData = [
+  {
+    id: 1,
+    title: "100% Responsive",
+    body: "No matter which the device you’re on, our site is fully responsive and stories look beautiful on any screen.",
+    image: responsive,
+  },
+  {
+    id: 2,
+    title: "No Photo Upload Limit",
+    body: "Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share all of your stories in one go.",
+    image: noLimit,
+  },
+  {
+    id: 3,
+    title: "Available to Embed",
+    body: "Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more.",
+    image: embed,
+  },
+  {
+    id: 4,
+    title: "Custom Domain",
+    body: "With Photosnap subscriptions you can host your stories on your own domain. You can also remove our branding!",
+    image: customDomain,
+  },
+  {
+    id: 5,
+    title: "Boost Your Exposure",
+    body: "Users that viewed your story or gallery can easily get notifed of new and featured stories with our built in mailing list.",
+    image: boostExposure,
+  },
+  {
+    id: 6,
+    title: "Drag & Drop Image",
+    body: "Easily drag and drop your image and get beautiful shots everytime. No over the top tooling to add friction to creating stories.",
+    image: dragDrop,
   },
 ];

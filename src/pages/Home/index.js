@@ -21,7 +21,8 @@ import beautifulMobile from "../../assets/home/mobile/beautiful-stories.jpg";
 import designedDesktop from "../../assets/home/desktop/designed-for-everyone.jpg";
 import designedTablet from "../../assets/home/tablet/designed-for-everyone.jpg";
 import designedMobile from "../../assets/home/mobile/designed-for-everyone.jpg";
-import Stories from "../../components/Stories";
+import StoriesSection from "../../components/StoriesSection";
+import FeaturesSection from "../../components/FeaturesSection";
 
 const Home = () => {
   return (
@@ -108,7 +109,8 @@ const Home = () => {
           mobileBackground={designedMobile}
         />
       </StyledHero>
-      <Stories />
+      <StoriesSection />
+      <FeaturesSection />
     </StyledContainer>
   );
 };

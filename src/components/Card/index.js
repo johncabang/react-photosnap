@@ -17,6 +17,7 @@ const Card = ({ stories }) => {
           <StyledCard key={story.id}>
             <StyledCardImage desktopCardBackground={story.image}>
               <StyledTextWrapper>
+                <StyledP>{story.date}</StyledP>
                 <StyledH3>{story.title}</StyledH3>
                 <StyledP>by {story.author}</StyledP>
                 <StyledLine />

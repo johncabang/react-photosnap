@@ -1,5 +1,6 @@
 import React from "react";
 import InviteSection from "../../components/InviteSection";
+import FeaturesSection from "../../components/FeaturesSection";
 import {
   StyledContainer,
   StyledHero,
@@ -23,6 +24,7 @@ const Features = () => {
         </StyledHeroTextWrapper>
         <StyledHeroImg />
       </StyledHero>
+      <FeaturesSection />
       <InviteSection />
     </StyledContainer>
   );

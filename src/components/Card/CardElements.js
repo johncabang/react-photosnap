@@ -1,11 +1,17 @@
 import styled from "styled-components";
 
 export const StyledCard = styled.div`
+  display: flex;
   width: 360px;
   height: 500px;
 
-  @media screen and (max-width: 768px) {
-    width: 468px;
+  @media screen and (max-width: 1024px) {
+    flex: 1 0 auto;
+    transition: ease-in 0.5s;
+  }
+
+  @media screen and (max-width: 520px) {
+    width: 100%;
   }
 `;
 

@@ -22,10 +22,8 @@ export const StyledFeaturesFooter = styled.div`
   }
 
   @media screen and (max-width: 520px) {
-    /* justify-content: center; */
     flex-direction: column;
     padding: 50px 0;
-    height: 288;
   }
 `;
 
