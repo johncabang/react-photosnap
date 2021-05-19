@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import InviteSection from "../../components/InviteSection";
 
 import {
@@ -13,21 +14,28 @@ import {
 
 const Pricing = () => {
   return (
-    <StyledContainer>
-      <StyledHero>
-        <StyledGradientLine />
-        <StyledHeroTextWrapper>
-          <StyledH1>pricing</StyledH1>
-          <StyledP>
-            Create a your stories, Photosnap is a platform for photographers and
-            visual storytellers. It’s the simple way to create and share your
-            photos.
-          </StyledP>
-        </StyledHeroTextWrapper>
-        <StyledHeroImg />
-      </StyledHero>
-      <InviteSection />
-    </StyledContainer>
+    <motion.div
+      initial={{ scaleY: 0 }}
+      animate={{ scaleY: 1 }}
+      exit={{ scaleY: 0 }}
+      transition={{ duration: 0.5 }}
+    >
+      <StyledContainer>
+        <StyledHero>
+          <StyledGradientLine />
+          <StyledHeroTextWrapper>
+            <StyledH1>pricing</StyledH1>
+            <StyledP>
+              Create a your stories, Photosnap is a platform for photographers
+              and visual storytellers. It’s the simple way to create and share
+              your photos.
+            </StyledP>
+          </StyledHeroTextWrapper>
+          <StyledHeroImg />
+        </StyledHero>
+        <InviteSection />
+      </StyledContainer>
+    </motion.div>
   );
 };
 
