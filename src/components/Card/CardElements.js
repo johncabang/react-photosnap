@@ -4,6 +4,18 @@ export const StyledCard = styled.div`
   display: flex;
   width: 360px;
   height: 500px;
+  transition: top ease 0.5s;
+  position: relative;
+  top: 0;
+
+  &:hover {
+    background-color: #000;
+    cursor: pointer;
+    top: -25px;
+    border-bottom: 5px solid transparent;
+    border-image: linear-gradient(to right, #ffc593, #bc7198, #5a77ff);
+    border-image-slice: 1;
+  }
 
   @media screen and (max-width: 1024px) {
     flex: 1 0 auto;

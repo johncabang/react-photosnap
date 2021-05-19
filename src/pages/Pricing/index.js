@@ -8,12 +8,14 @@ import {
   StyledHeroTextWrapper,
   StyledP,
   StyledHeroImg,
+  StyledGradientLine,
 } from "./PricingElements";
 
 const Pricing = () => {
   return (
     <StyledContainer>
       <StyledHero>
+        <StyledGradientLine />
         <StyledHeroTextWrapper>
           <StyledH1>pricing</StyledH1>
           <StyledP>

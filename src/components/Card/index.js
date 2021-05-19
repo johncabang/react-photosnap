@@ -30,7 +30,7 @@ const Card = ({ stories }) => {
                     width="43"
                     height="14"
                   >
-                    <g fill="none" fill-rule="evenodd" stroke="#fff">
+                    <g fill="none" filrule="evenodd" stroke="#fff">
                       <path d="M0 7h41.864M35.428 1l6 6-6 6" />
                     </g>
                   </svg>

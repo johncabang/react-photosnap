@@ -22,11 +22,32 @@ export const StyledHero = styled.div`
   color: #fff;
   width: 100%;
   height: 490px;
+  position: relative;
 
   @media screen and (max-width: 520px) {
     flex-direction: column-reverse;
     height: 100%;
     transition: ease-in 0.5s;
+  }
+`;
+
+export const StyledGradientLine = styled.div`
+  background: linear-gradient(to top, #ffc593, #bc7198, #5a77ff);
+  position: absolute;
+  width: 5px;
+  height: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+  top: 0;
+  bottom: 0;
+
+  @media screen and (max-width: 520px) {
+    background: linear-gradient(to right, #ffc593, #bc7198, #5a77ff);
+    margin: 0;
+    top: 294px;
+    left: 10%;
+    width: 50%;
+    height: 5px;
   }
 `;
 

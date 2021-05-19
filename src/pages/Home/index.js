@@ -8,6 +8,7 @@ import {
   StyledHeroImg,
   StyledRightWrapper,
   StyledH4,
+  StyledGradientLine,
 } from "./HomeElements";
 
 import createDesktop from "../../assets/home/desktop/create-and-share.jpg";
@@ -28,6 +29,7 @@ const Home = () => {
   return (
     <StyledContainer>
       <StyledHero direction={`column-reverse`}>
+        <StyledGradientLine />
         <StyledHeroTextWrapper color={`#000`}>
           <StyledH1 color={`#fff`}>
             Create and <br />

@@ -11,12 +11,14 @@ import {
   StyledHeroTextWrapper,
   StyledP,
   StyledHeroImg,
+  StyledGradientLine,
 } from "./FeaturesElements";
 
 const Features = () => {
   return (
     <StyledContainer>
       <StyledHero>
+        <StyledGradientLine />
         <StyledHeroTextWrapper>
           <StyledH1>features</StyledH1>
           <StyledP>
