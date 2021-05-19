@@ -50,3 +50,13 @@ export const StyledLine = styled.div`
   opacity: 30%;
   margin: 20px 0;
 `;
+
+export const StyledReadStoryWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
+export const StyledH4 = styled.h4`
+  text-transform: uppercase;
+  color: #fff;
+`;

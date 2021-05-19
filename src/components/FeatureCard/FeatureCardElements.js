@@ -16,7 +16,7 @@ export const StyledCard = styled.div`
 
   @media screen and (max-width: 1024px) {
     width: 100%;
-    padding: 0 250px;
+    padding: 0 150px;
     margin: 100px 0;
     transition: ease-in 0.5s;
   }
