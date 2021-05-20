@@ -49,3 +49,33 @@ export const StyledLink = styled(Link)`
 export const StyledLogoLink = styled(Link)`
   align-items: center;
 `;
+
+export const MobileIcon = styled.div`
+  display: none;
+
+  @media screen and (max-width: 520px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+`;
+
+export const StyledInviteButton = styled.button`
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  cursor: pointer;
+  width: 160px;
+  height: 40px;
+
+  @media screen and (max-width: 520px) {
+    display: none;
+  }
+`;

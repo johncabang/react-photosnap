@@ -1,23 +1,8 @@
 import React from "react";
+import { StyledInviteButton } from "./ButtonElements";
 
 const Button = (props) => {
-  return (
-    <button
-      style={{
-        fontSize: 12,
-        textDecoration: "none",
-        textTransform: "uppercase",
-        color: "#fff",
-        backgroundColor: "#000",
-        border: "none",
-        cursor: "pointer",
-        width: "160px",
-        height: "40px",
-      }}
-    >
-      {props.children}
-    </button>
-  );
+  return <StyledInviteButton>{props.children}</StyledInviteButton>;
 };
 
 export default Button;

@@ -5,6 +5,8 @@ import {
   useLocation,
 } from "react-router-dom";
 
+import { React, useState } from "react";
+
 import { AnimatePresence } from "framer-motion";
 
 import Home from "./pages/Home";
@@ -15,13 +17,20 @@ import PageNotFound from "./pages/PageNotFound";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import NavbarMenu from "./components/NavbarMenu";
 
 function App() {
   const location = useLocation();
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <>
       <ScrollToTop />
-      <Navbar />
+      <Navbar isOpen={isOpen} toggle={toggle} />
+      <NavbarMenu isOpen={isOpen} toggle={toggle} />
       <AnimatePresence exitBeforeEnter initial={false}>
         <Switch location={location} key={location.pathname}>
           <Route path="/" exact component={Home} />

@@ -1,15 +1,20 @@
-import React from "react";
+import { React } from "react";
 
-import Button from "../Button";
+// import Button from "../Button";
 import {
   StyledContainer,
   StyledLI,
   StyledLink,
   StyledLogoLink,
   StyledUL,
+  MobileIcon,
+  StyledInviteButton,
 } from "./NavbarElements";
 
-const Navbar = () => {
+import menu from "./../../assets/shared/mobile/menu.svg";
+import close from "./../../assets/shared/mobile/close.svg";
+
+const Navbar = ({ isOpen, toggle }) => {
   return (
     <StyledContainer>
       <StyledLogoLink to="/">
@@ -31,6 +36,13 @@ const Navbar = () => {
           </g>
         </svg>
       </StyledLogoLink>
+      <MobileIcon onClick={toggle}>
+        {!isOpen ? (
+          <img src={menu} alt="menu" />
+        ) : (
+          <img src={close} alt="close" />
+        )}
+      </MobileIcon>
       <StyledUL>
         <StyledLI>
           <StyledLink to="stories">
@@ -48,7 +60,7 @@ const Navbar = () => {
           </StyledLink>
         </StyledLI>
       </StyledUL>
-      <Button>get an invite</Button>
+      <StyledInviteButton>get an invite</StyledInviteButton>
     </StyledContainer>
   );
 };
