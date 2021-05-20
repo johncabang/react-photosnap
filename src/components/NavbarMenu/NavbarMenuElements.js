@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Link as LinkRouter } from "react-router-dom";
 
-export const SidebarContainer = styled.aside`
+export const NavbarMenuContainer = styled.aside`
   display: flex;
   justify-content: center;
   position: fixed;
@@ -15,7 +15,7 @@ export const SidebarContainer = styled.aside`
   top: ${({ isOpen }) => (isOpen ? "72px" : "-100%")};
 `;
 
-export const SidebarWrapper = styled.div`
+export const NavbarMenuWrapper = styled.div`
   background: #fff;
   display: flex;
   justify-content: center;
@@ -24,7 +24,7 @@ export const SidebarWrapper = styled.div`
   height: 100%;
 `;
 
-export const SidebarMenu = styled.div`
+export const NavbarMenuMenu = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -33,7 +33,7 @@ export const SidebarMenu = styled.div`
   align-items: center;
 `;
 
-export const SidebarLink = styled(LinkRouter)`
+export const NavbarMenuLink = styled(LinkRouter)`
   display: flex;
   justify-content: center;
   align-items: center;
