@@ -78,4 +78,9 @@ export const StyledInviteButton = styled.button`
   @media screen and (max-width: 520px) {
     display: none;
   }
+  &:hover {
+    transition: ease-in 0.2s;
+    background-color: #979797;
+    color: #000;
+  }
 `;

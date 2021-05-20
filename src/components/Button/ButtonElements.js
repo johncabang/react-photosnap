@@ -10,4 +10,10 @@ export const StyledInviteButton = styled.button`
   cursor: pointer;
   width: 80%;
   height: 40px;
+
+  &:hover {
+    transition: ease-in 0.2s;
+    background-color: #979797;
+    color: #000;
+  }
 `;

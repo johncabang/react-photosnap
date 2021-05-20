@@ -2,17 +2,14 @@ import desktopCardMountains from "./assets/stories/desktop/mountains.jpg";
 import desktopCardCityscapes from "./assets/stories/desktop/cityscapes.jpg";
 import desktopCard18DaysVoyage from "./assets/stories/desktop/18-days-voyage.jpg";
 import desktopCardArchitecturals from "./assets/stories/desktop/architecturals.jpg";
-
 import desktopCardWorldTour from "./assets/stories/desktop/world-tour.jpg";
 import desktopCardUnforseenCorners from "./assets/stories/desktop/unforeseen-corners.jpg";
 import desktopCardTripToNowhere from "./assets/stories/desktop/trip-to-nowhere.jpg";
 import desktopCardSomwarpet from "./assets/stories/desktop/somwarpet.jpg";
-
 import desktopCardRunningFree from "./assets/stories/desktop/running-free.jpg";
 import desktopCardRageOfTheSea from "./assets/stories/desktop/rage-of-the-sea.jpg";
 import desktopCardMilkyWay from "./assets/stories/desktop/milky-way.jpg";
 import desktopCardLandOfDreams from "./assets/stories/desktop/land-of-dreams.jpg";
-
 import desktopCardKingOnAfrica from "./assets/stories/desktop/king-on-africa.jpg";
 import desktopCardDarkForest from "./assets/stories/desktop/dark-forest.jpg";
 import desktopCardCalmWaters from "./assets/stories/desktop/calm-waters.jpg";
@@ -24,6 +21,24 @@ import dragDrop from "./assets/features/desktop/drag-drop.svg";
 import embed from "./assets/features/desktop/embed.svg";
 import noLimit from "./assets/features/desktop/no-limit.svg";
 import responsive from "./assets/features/desktop/responsive.svg";
+
+export const homeDatas = [
+  {
+    id: 1,
+    title: "create and <br />share your <br />photo stories.",
+    body: "Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others.",
+  },
+  {
+    id: 2,
+    title: "beatiful <br /> stories <br /> every time.",
+    body: "We provide design templates to ensure your stories look terrific. Easily add photos, text, embed maps and media from other networks. Then share your story with everyone.",
+  },
+  {
+    id: 3,
+    title: "designed for<br /> everyone.",
+    body: "Photosnap can help you create stories that resonate with your audience. Our tool is designed for photographers of all levels, brands, businesses you name it.",
+  },
+];
 
 export const storyData = [
   {
