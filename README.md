@@ -1,6 +1,8 @@
-!["photosnap"](https://github.com/johncabang/react-photosnap/blob/main/docs/preview.jpg?raw=true)
+<!-- !["photosnap"](https://github.com/johncabang/react-photosnap/blob/main/docs/preview.jpg?raw=true) -->
 
-## Frontend Mentor - Photosnap Website solution <!-- omit in toc -->
+!["react-photosnap"](https://github.com/johncabang/react-photosnap/blob/main/docs/react-photosnap-001.gif?raw=true)
+
+## Frontend Mentor - Photosnap Website <!-- omit in toc -->
 
 This is a solution to the [Photosnap Website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/photosnap-multipage-website-nMDSrNmNW). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
@@ -25,10 +27,10 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 - [Styled Components](https://styled-components.com/) - For styles
+- [Framer Motion](https://www.framer.com/motion/) - For animation
 
 <!-- ### Preview
 
