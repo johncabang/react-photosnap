@@ -11,6 +11,7 @@ import {
   StyledHeroImg,
   StyledGradientLine,
 } from "./PricingElements";
+import PricingSection from "../../components/PricingSection";
 
 const Pricing = () => {
   return (
@@ -33,6 +34,7 @@ const Pricing = () => {
           </StyledHeroTextWrapper>
           <StyledHeroImg />
         </StyledHero>
+        <PricingSection />
         <InviteSection />
       </StyledContainer>
     </motion.div>
