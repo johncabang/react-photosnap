@@ -55,10 +55,47 @@ export const StyledCardWrapper = styled.div`
   flex-direction: column;
 `;
 
+export const StyledH1 = styled.h1`
+  letter-spacing: 4.17;
+`;
+
 export const StyledH3 = styled.h3`
   padding-bottom: 20px;
 `;
 
 export const StyledP = styled.p`
   padding-bottom: 30px;
+`;
+
+export const StyledSwitch = styled.input`
+  appearance: none;
+  height: 36px;
+  width: 64px;
+  background-color: lightgray;
+  cursor: pointer;
+  border-radius: 100px;
+  position: relative;
+  transition: background-color 0.3s ease;
+  margin: 0 10px;
+
+  &::before {
+    content: "";
+    height: 32px;
+    width: 50%;
+    background-color: black;
+    position: absolute;
+    border-radius: 25px;
+    border: lightgray solid 2px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+  }
+
+  &:checked {
+    background-color: black;
+  }
+
+  &:checked::before {
+    transform: translateX(78%);
+    background-color: white;
+    border: black solid 2px;
+  }
 `;
