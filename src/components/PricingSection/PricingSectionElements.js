@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const StyledContainer = styled.div`
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   flex-direction: column;
   text-align: center;
   margin: 100px 0;
@@ -13,6 +12,30 @@ export const StyledCardContainer = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 0 165px;
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+`;
+
+export const StyledCardPrice = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (max-width: 1024px) {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0 20px;
+  }
+
+  @media screen and (max-width: 520px) {
+    position: static;
+    text-align: center;
+  }
 `;
 
 export const StyledH1 = styled.h1`
@@ -27,11 +50,35 @@ export const StyledButton = styled.button`
   cursor: pointer;
   width: 100%;
   height: 40px;
+
+  @media screen and (max-width: 1024px) {
+    width: 270px;
+  }
+
+  @media screen and (max-width: 520px) {
+    width: 100%;
+  }
 `;
 
 export const StyledCardWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  position: relative;
+
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+  }
+`;
+
+export const StyledCardTextWrapper = styled.div`
+  @media screen and (max-width: 1024px) {
+    width: 270px;
+  }
+
+  @media screen and (max-width: 520px) {
+    width: 100%;
+    text-align: center;
+  }
 `;
 
 export const StyledH3 = styled.h3`
@@ -83,12 +130,12 @@ export const StyledCard = styled.div`
   width: 350px;
   height: 407px;
   padding: 45px;
-  background-color: #979797;
-  transition: ease 0.3s;
+  background-color: #e3e3e3;
+  transition: ease 0.6s;
 
   &:hover {
     background-color: #000;
-    color: #979797;
+    color: #e3e3e3;
     transform: translate3D(0, -1px, 0) scale(1.11);
     border-top: 5px solid transparent;
     border-image: linear-gradient(to right, #ffc593, #bc7198, #5a77ff);
@@ -104,5 +151,17 @@ export const StyledCard = styled.div`
     ${StyledH3} {
       color: #fff;
     }
+  }
+
+  @media screen and (max-width: 1024px) {
+    width: 80%;
+    margin: 0 auto 60px;
+    text-align: left;
+    justify-content: flex-start;
+    height: 270px;
+  }
+
+  @media screen and (max-width: 520px) {
+    height: 407px;
   }
 `;

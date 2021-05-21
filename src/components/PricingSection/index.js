@@ -9,6 +9,8 @@ import {
   StyledH3,
   StyledP,
   StyledSwitch,
+  StyledCardTextWrapper,
+  StyledCardPrice,
 } from "./PricingSectionElements";
 
 import { pricingDatas } from "./../../data";
@@ -25,6 +27,7 @@ const PricingSection = () => {
           alignItems: "center",
           paddingBottom: 60,
           height: "100%",
+          width: "100%",
         }}
       >
         <h3>Monthly</h3>
@@ -40,14 +43,18 @@ const PricingSection = () => {
           return (
             <StyledCard key={pricingData.id}>
               <StyledCardWrapper>
-                <StyledH3>{pricingData.title}</StyledH3>
-                <StyledP>{pricingData.body}</StyledP>
-                <StyledH1 style={{ letterSpacing: 4.17 }}>
-                  {!isToggled
-                    ? pricingData.monthlyPrice
-                    : pricingData.yearlyPrice}
-                </StyledH1>
-                <StyledP>per month</StyledP>
+                <StyledCardTextWrapper>
+                  <StyledH3>{pricingData.title}</StyledH3>
+                  <StyledP>{pricingData.body}</StyledP>
+                </StyledCardTextWrapper>
+                <StyledCardPrice>
+                  <StyledH1>
+                    {!isToggled
+                      ? pricingData.monthlyPrice
+                      : pricingData.yearlyPrice}
+                  </StyledH1>
+                  <StyledP>per month</StyledP>
+                </StyledCardPrice>
                 <StyledButton>PICK PLAN</StyledButton>
               </StyledCardWrapper>
             </StyledCard>
