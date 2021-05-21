@@ -159,9 +159,23 @@ export const StyledCard = styled.div`
     text-align: left;
     justify-content: flex-start;
     height: 270px;
+
+    &:hover {
+      border-top: 0;
+      border-left: 5px solid transparent;
+      border-image: linear-gradient(to top, #ffc593, #bc7198, #5a77ff);
+      border-image-slice: 1;
+    }
   }
 
   @media screen and (max-width: 520px) {
     height: 407px;
+
+    &:hover {
+      border-left: 0;
+      border-top: 5px solid transparent;
+      border-image: linear-gradient(to right, #ffc593, #bc7198, #5a77ff);
+      border-image-slice: 1;
+    }
   }
 `;
