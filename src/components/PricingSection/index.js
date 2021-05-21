@@ -9,6 +9,8 @@ import {
   StyledP,
 } from "./PricingSectionElements";
 
+import { pricingDatas } from "./../../data";
+
 const PricingSection = () => {
   return (
     <StyledContainer>
@@ -19,42 +21,21 @@ const PricingSection = () => {
         <StyledH3>Yearly</StyledH3>
       </div>
       <StyledCardContainer>
-        <StyledCard>
-          <StyledCardWrapper>
-            <StyledH3>Basic</StyledH3>
-            <StyledP>
-              Includes basic usage of our platform. Recommended for new and
-              aspiring photographers.
-            </StyledP>
-            <h1 style={{ letterSpacing: 4.17 }}>$19.00</h1>
-            <StyledP>per month</StyledP>
-            <StyledButton>PICK PLAN</StyledButton>
-          </StyledCardWrapper>
-        </StyledCard>
-        <StyledCard>
-          <StyledCardWrapper>
-            <StyledH3>Pro</StyledH3>
-            <StyledP>
-              More advanced features available. Recommended for photography
-              veterans and professionals.
-            </StyledP>
-            <h1 style={{ letterSpacing: 4.17 }}>$39.00</h1>
-            <StyledP>per month</StyledP>
-            <StyledButton>PICK PLAN</StyledButton>
-          </StyledCardWrapper>
-        </StyledCard>
-        <StyledCard>
-          <StyledCardWrapper>
-            <StyledH3>Business</StyledH3>
-            <StyledP>
-              Additional features available such as more detailed metrics.
-              Recommended for business owners.
-            </StyledP>
-            <h1 style={{ letterSpacing: 4.17 }}>$99.00</h1>
-            <StyledP>per month</StyledP>
-            <StyledButton>PICK PLAN</StyledButton>
-          </StyledCardWrapper>
-        </StyledCard>
+        {pricingDatas.map((pricingData) => {
+          return (
+            <StyledCard key={pricingData.id}>
+              <StyledCardWrapper>
+                <StyledH3>{pricingData.title}</StyledH3>
+                <StyledP>{pricingData.body}</StyledP>
+                <h1 style={{ letterSpacing: 4.17 }}>
+                  {pricingData.monthlyPrice}
+                </h1>
+                <StyledP>per month</StyledP>
+                <StyledButton>PICK PLAN</StyledButton>
+              </StyledCardWrapper>
+            </StyledCard>
+          );
+        })}
       </StyledCardContainer>
     </StyledContainer>
   );
@@ -64,24 +45,6 @@ export default PricingSection;
 
 // Monthly
 // Yearly
-
-// Basic
-// Includes basic usage of our platform. Recommended for new and aspiring photographers.
-// $19.00 per month
-// $190.00 per year
-// Pick Plan
-
-// Pro
-// More advanced features available. Recommended for photography veterans and professionals.
-// $39.00 per month
-// $390.00 per year
-// Pick Plan
-
-// Business
-// Additional features available such as more detailed metrics. Recommended for business owners.
-// $99.00 per month
-// $990.00 per year
-// Pick Plan
 
 // Compare
 
