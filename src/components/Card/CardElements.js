@@ -4,7 +4,6 @@ export const StyledCard = styled.div`
   display: flex;
   width: 360px;
   height: 500px;
-  transition: top ease 0.5s;
   position: relative;
   top: 0;
 
@@ -15,6 +14,7 @@ export const StyledCard = styled.div`
     border-bottom: 5px solid transparent;
     border-image: linear-gradient(to right, #ffc593, #bc7198, #5a77ff);
     border-image-slice: 1;
+    transition: top ease 0.5s;
   }
 
   @media screen and (max-width: 1024px) {
