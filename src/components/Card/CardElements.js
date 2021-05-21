@@ -6,6 +6,7 @@ export const StyledCard = styled.div`
   height: 500px;
   position: relative;
   top: 0;
+  transition: top ease 0.5s;
 
   &:hover {
     background-color: #000;
