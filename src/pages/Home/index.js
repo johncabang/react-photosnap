@@ -26,6 +26,8 @@ import designedMobile from "../../assets/home/mobile/designed-for-everyone.jpg";
 import StoriesSection from "../../components/StoriesSection";
 import FeaturesSection from "../../components/FeaturesSection";
 
+// TODOS - FIX ROUTING TO SPECIFIC PAGES, REFACTOR CODE, FIX FRAMER MOTION-SCROLL-TO-TOP RELOADING ISSUE
+
 const Home = () => {
   return (
     <motion.div
@@ -48,7 +50,7 @@ const Home = () => {
               We make it easy to share photos, tell stories and connect with
               others.
             </StyledP>
-            <StyledRightWrapper color={`#fff`}>
+            <StyledRightWrapper color={`#fff`} to="/">
               <StyledH4>Get an invite </StyledH4>
               <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
                 <g fill="none" fillRule="evenodd" stroke="#fff">
@@ -81,7 +83,7 @@ const Home = () => {
               Easily add photos, text, embed maps and media from other networks.
               Then share your story with everyone.
             </StyledP>
-            <StyledRightWrapper color={`#000`}>
+            <StyledRightWrapper color={`#000`} to="stories">
               <StyledH4>View the stories </StyledH4>
               <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
                 <g fill="none" fillRule="evenodd" stroke="#000">
@@ -103,7 +105,7 @@ const Home = () => {
               audience. Our tool is designed for photographers of all levels,
               brands, businesses you name it.
             </StyledP>
-            <StyledRightWrapper color={`#000`}>
+            <StyledRightWrapper color={`#000`} to="stories">
               <StyledH4>View the stories </StyledH4>
               <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
                 <g fill="none" fillRule="evenodd" stroke="#000">

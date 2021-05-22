@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const StyledContainer = styled.div`
   display: flex;
@@ -103,7 +104,7 @@ export const StyledHeroImg = styled.div`
   }
 `;
 
-export const StyledRightWrapper = styled.div`
+export const StyledRightWrapper = styled(Link)`
   display: flex;
   padding-top: 40px;
   color: ${(props) => props.color};

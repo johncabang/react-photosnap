@@ -82,7 +82,6 @@ export const StyledH1 = styled.h1`
 export const StyledH4 = styled.h4`
   text-transform: uppercase;
   padding-right: 20px;
-  cursor: pointer;
   color: #fff;
   padding-bottom: 20px;
   letter-spacing: 2px;
