@@ -22,21 +22,70 @@ import embed from "./assets/features/desktop/embed.svg";
 import noLimit from "./assets/features/desktop/no-limit.svg";
 import responsive from "./assets/features/desktop/responsive.svg";
 
+import createDesktop from "./assets/home/desktop/create-and-share.jpg";
+import createTablet from "./assets/home/tablet/create-and-share.jpg";
+import createMobile from "./assets/home/mobile/create-and-share.jpg";
+
+import beautifulDesktop from "./assets/home/desktop/beautiful-stories.jpg";
+import beautifulTablet from "./assets/home/tablet/beautiful-stories.jpg";
+import beautifulMobile from "./assets/home/mobile/beautiful-stories.jpg";
+
+import designedDesktop from "./assets/home/desktop/designed-for-everyone.jpg";
+import designedTablet from "./assets/home/tablet/designed-for-everyone.jpg";
+import designedMobile from "./assets/home/mobile/designed-for-everyone.jpg";
+
+const home = {
+  black: "#000",
+  white: "#fff",
+  column: "column",
+  reverse: "column-reverse",
+};
+
 export const homeDatas = [
   {
     id: 1,
-    title: "create and <br />share your <br />photo stories.",
+    title: "create and share your photo stories.",
     body: "Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others.",
+    direction: home.reverse,
+    textWrapper: home.black,
+    h1color: home.white,
+    rightWrapperColor: home.white,
+    desktopImage: createDesktop,
+    tabletImage: createTablet,
+    mobileImage: createMobile,
+    linkText: "Get an invite",
+    svgStrokeColor: home.white,
+    route: "/",
   },
   {
     id: 2,
-    title: "beatiful <br /> stories <br /> every time.",
+    title: "beatiful  stories every time.",
     body: "We provide design templates to ensure your stories look terrific. Easily add photos, text, embed maps and media from other networks. Then share your story with everyone.",
+    direction: home.column,
+    textWrapper: home.white,
+    h1color: home.black,
+    rightWrapperColor: home.black,
+    desktopImage: beautifulDesktop,
+    tabletImage: beautifulTablet,
+    mobileImage: beautifulMobile,
+    linkText: "View the stories",
+    svgStrokeColor: home.black,
+    route: "stories",
   },
   {
     id: 3,
-    title: "designed for<br /> everyone.",
+    title: "designed for everyone.",
     body: "Photosnap can help you create stories that resonate with your audience. Our tool is designed for photographers of all levels, brands, businesses you name it.",
+    direction: home.reverse,
+    textWrapper: home.white,
+    h1color: home.black,
+    rightWrapperColor: home.black,
+    desktopImage: designedDesktop,
+    tabletImage: designedTablet,
+    mobileImage: designedMobile,
+    linkText: "View the stories",
+    svgStrokeColor: home.black,
+    route: "stories",
   },
 ];
 
@@ -47,6 +96,7 @@ export const storyData = [
     image: desktopCardMountains,
     title: "The Montains",
     author: "John Appleseed",
+    route: "stories",
   },
   {
     id: 2,
@@ -54,6 +104,7 @@ export const storyData = [
     image: desktopCardCityscapes,
     title: "Sunset Cityscapes",
     author: "Benjamin Cruz",
+    route: "stories",
   },
   {
     id: 3,
@@ -61,6 +112,7 @@ export const storyData = [
     image: desktopCard18DaysVoyage,
     title: "18 Days Voyage",
     author: "Alexie Borodin",
+    route: "stories",
   },
   {
     id: 4,
@@ -68,6 +120,7 @@ export const storyData = [
     image: desktopCardArchitecturals,
     title: "Architecturals",
     author: "Samantha Brooke",
+    route: "stories",
   },
   {
     id: 5,
@@ -75,6 +128,7 @@ export const storyData = [
     image: desktopCardWorldTour,
     title: "World Tour 2019",
     author: "Timothy Wagner",
+    route: "stories",
   },
   {
     id: 6,
@@ -82,6 +136,7 @@ export const storyData = [
     image: desktopCardUnforseenCorners,
     title: "Unforeseen Corners",
     author: "William Malcolm",
+    route: "stories",
   },
   {
     id: 7,
@@ -89,6 +144,7 @@ export const storyData = [
     image: desktopCardKingOnAfrica,
     title: "King on Africa: Part II",
     author: "Tim Hillenburg",
+    route: "stories",
   },
   {
     id: 8,
@@ -96,6 +152,7 @@ export const storyData = [
     image: desktopCardTripToNowhere,
     title: "The Trip to Nowhere",
     author: "Felicia Rourke",
+    route: "stories",
   },
   {
     id: 9,
@@ -103,6 +160,7 @@ export const storyData = [
     image: desktopCardRageOfTheSea,
     title: "Rage of The Sea",
     author: "Mohammed Abdul",
+    route: "stories",
   },
   {
     id: 10,
@@ -110,6 +168,7 @@ export const storyData = [
     image: desktopCardRunningFree,
     title: "Running Free",
     author: "Michelle",
+    route: "stories",
   },
   {
     id: 11,
@@ -117,6 +176,7 @@ export const storyData = [
     image: desktopCardBehindTheWaves,
     title: "Behind the Waves",
     author: " Lamarr Wilson",
+    route: "stories",
   },
   {
     id: 12,
@@ -124,6 +184,7 @@ export const storyData = [
     image: desktopCardCalmWaters,
     title: "Calm Waters",
     author: "Samantha Brooke",
+    route: "stories",
   },
   {
     id: 13,
@@ -131,6 +192,7 @@ export const storyData = [
     image: desktopCardMilkyWay,
     title: "The Milky Way",
     author: "Benjamin Cruz",
+    route: "stories",
   },
   {
     id: 14,
@@ -138,6 +200,7 @@ export const storyData = [
     image: desktopCardDarkForest,
     title: "Night at The Dark Forest",
     author: "Mohammed Abdul",
+    route: "stories",
   },
   {
     id: 15,
@@ -145,6 +208,7 @@ export const storyData = [
     image: desktopCardSomwarpet,
     title: "Somwarpet’s Beauty",
     author: "Michelle",
+    route: "stories",
   },
   {
     id: 16,
@@ -152,6 +216,7 @@ export const storyData = [
     image: desktopCardLandOfDreams,
     title: "Land of Dreams",
     author: "William Malcolm",
+    route: "stories",
   },
 ];
 

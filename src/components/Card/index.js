@@ -16,7 +16,7 @@ const Card = ({ stories }) => {
     <>
       {stories.map((story) => {
         return (
-          <StyledCard key={story.id}>
+          <StyledCard key={story.id} to={story.route}>
             <StyledCardImage desktopCardBackground={story.image}>
               <StyledTextWrapper>
                 <StyledP>{story.date}</StyledP>

@@ -108,6 +108,7 @@ export const StyledRightWrapper = styled(Link)`
   display: flex;
   padding-top: 40px;
   color: ${(props) => props.color};
+  text-decoration: none;
 `;
 
 export const StyledH4 = styled.h4`
