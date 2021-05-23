@@ -11,7 +11,7 @@ This is a solution to the [Photosnap Website challenge on Frontend Mentor](https
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Built with](#built-with)
-  <!-- - [Preview](#preview) -->
+  - [Preview](#preview)
 
 ## Overview
 
@@ -32,6 +32,6 @@ Users should be able to:
 - [Styled Components](https://styled-components.com/) - For styles
 - [Framer Motion](https://www.framer.com/motion/) - For animation
 
-<!-- ### Preview
+### Preview
 
-!["photosnap"](https://github.com/johncabang/react-photosnap/blob/main/docs/preview.jpg?raw=true) -->
+!["photosnap-stories"](https://github.com/johncabang/react-photosnap/blob/main/docs/react-photosnap-desktop-stories-001.png?raw=true)
