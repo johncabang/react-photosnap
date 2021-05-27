@@ -2,8 +2,8 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const StyledCard = styled(Link)`
-  display: flex;
-  width: 360px;
+  flex: 1 0 auto;
+  /* width: 360px; */
   height: 500px;
   position: relative;
   top: 0;
@@ -20,12 +20,14 @@ export const StyledCard = styled(Link)`
   }
 
   @media screen and (max-width: 1024px) {
-    flex: 1 0 auto;
+    width: 50%;
     transition: ease-in 0.5s;
   }
 
-  @media screen and (max-width: 520px) {
+  @media screen and (max-width: 720px) {
     width: 100%;
+    min-width: auto;
+    position: static;
   }
 `;
 

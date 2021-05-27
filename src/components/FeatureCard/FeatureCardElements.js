@@ -40,7 +40,7 @@ export const StyledImageContainer = styled.div`
 `;
 
 export const StyledImage = styled.img`
-  object-fit: none;
+  object-fit: cover;
 `;
 
 export const StyledH3 = styled.h3`

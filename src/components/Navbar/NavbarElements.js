@@ -16,7 +16,7 @@ export const StyledContainer = styled.div`
     transition: ease-in 0.5s;
   }
 
-  @media screen and (max-width: 520px) {
+  @media screen and (max-width: 768px) {
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -25,7 +25,7 @@ export const StyledContainer = styled.div`
 export const StyledUL = styled.ul`
   display: flex;
 
-  @media screen and (max-width: 520px) {
+  @media screen and (max-width: 680px) {
     display: none;
   }
 `;
@@ -53,7 +53,7 @@ export const StyledLogoLink = styled(Link)`
 export const MobileIcon = styled.div`
   display: none;
 
-  @media screen and (max-width: 520px) {
+  @media screen and (max-width: 680px) {
     display: block;
     position: absolute;
     top: 0;
@@ -75,7 +75,7 @@ export const StyledInviteButton = styled.button`
   width: 160px;
   height: 40px;
 
-  @media screen and (max-width: 520px) {
+  @media screen and (max-width: 680px) {
     display: none;
   }
   &:hover {
