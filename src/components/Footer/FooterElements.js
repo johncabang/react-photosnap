@@ -53,7 +53,7 @@ export const StyledLogoWrapper = styled.div`
   }
 `;
 
-export const StyledLogo = styled(Link)`
+export const StyledLogo = styled.div`
   align-items: center;
   padding-right: 100px;
 
