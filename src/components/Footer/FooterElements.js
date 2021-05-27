@@ -173,3 +173,15 @@ export const StyledP = styled.p`
     font-size: 12px;
   }
 `;
+
+export const Icon = styled.svg`
+  height: 20px;
+  width: 20px;
+  display: flex;
+  fill: white;
+  cursor: pointer;
+
+  &:hover {
+    fill: url(#a);
+  }
+`;
