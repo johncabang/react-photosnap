@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const StyledCard = styled(Link)`
   flex: 1 0 auto;
-  /* width: 360px; */
+  width: 25%;
   height: 500px;
   position: relative;
   top: 0;
